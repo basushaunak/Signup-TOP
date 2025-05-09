@@ -26,10 +26,6 @@
     background-image: url("../images/bg.jpg");
 }
 
-/* .image > *{
-    display: inline;
-} */
-
 .logo{
     margin: 50% 0;
     background-color: rgba(0,0,0,0.4);
@@ -97,14 +93,14 @@ label{
 }
 
 .form-submit{
-    /* background: linear-gradient(180deg, #83898f 0%, #ffffff 100%); */
     border-top: 6px solid #dbdbdc;
     font-size: var(--default-font-size);
     padding-inline-start: 4rem;
 }
 
 input:invalid{
-    border:1px red solid;
+    border:1px #ff0000 solid;
+    background-color: #f3a9a9;
 }
 
 input:valid{
