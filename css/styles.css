@@ -1,1 +1,136 @@
 /* CSS file for Signup form (The Odin Project) */
+
+:root, *, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --side-bar-font-size: 5rem;
+    --default-font-size: 1.25rem;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.signon-screen{
+    display: flex;
+    justify-content: center;
+}
+
+.side-bar{
+    width: 30%;
+    height: 100vh;
+    background-image: url("../images/bg.jpg");
+}
+
+/* .image > *{
+    display: inline;
+} */
+
+.logo{
+    margin: 50% 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+img{
+    height: var(--side-bar-font-size);
+}
+
+
+.logo p{
+    font-family: "Ga Maamli", Arial, Helvetica, sans-serif;
+    color: white;
+    display: inline;
+    font-size: var(--side-bar-font-size);
+    letter-spacing: 0.1em;
+}
+
+.main-frame{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-frame > *{
+    height: 33%;
+}
+
+.header{
+    font-size: var(--default-font-size);
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header > *{
+    margin: 0.2em 6em 0.2em 2em;
+}
+
+.login-frame{
+    margin-inline: 4em;
+}
+
+.login-frame > p{
+    font-size: var(--default-font-size);
+    padding-block-start: 1em;
+}
+
+.tabular-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-block-start: 2.5em;
+
+}
+
+label{
+    display: block;
+}
+
+.form-submit{
+    /* background: linear-gradient(180deg, #83898f 0%, #ffffff 100%); */
+    border-top: 6px solid #dbdbdc;
+    font-size: var(--default-font-size);
+    padding-inline-start: 4rem;
+}
+
+input:invalid{
+    border:1px red solid;
+}
+
+input:valid{
+    border:1px green solid;
+}
+
+#button{
+    background-color: #596d48;
+    border-radius: 25px;
+    font-size: var(--default-font-size);
+    padding: 0.5em 2em;
+    color: white;
+    display: block;
+    margin-block: 2rem;
+}
+
+#button:hover{
+    background-color: #4a6136;
+    color: #fc9cfc;
+    cursor: pointer;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
